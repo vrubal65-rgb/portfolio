@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chetna Ghorela | AI &amp; Data Science Student</title>
+  <meta name="description" content="Portfolio of Chetna Ghorela, an aspiring AI and Data Science professional studying at GJUST, Hisar." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Background network animation (drawn by script.js) -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo" aria-label="Chetna Ghorela, home">CG<span>.</span></a>
+
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" aria-label="Switch to light theme" title="Toggle theme">
+        <span id="theme-icon">☀</span>
+      </button>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, world 👋</p>
+        <h1>Hi, I'm <span class="gradient-text">Chetna Ghorela</span></h1>
+        <h2 class="hero-title">AI &amp; Data Science Student</h2>
+        <p class="typing-line" aria-live="off">
+          <span id="typing-text"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+        <p class="hero-intro">
+          An aspiring AI &amp; Data Science professional passionate about technology,
+          innovation and building meaningful digital experiences. I explore the
+          intersection of Artificial Intelligence, Machine Learning, Data Science and
+          Web Development.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">Explore Projects</a>
+          <a href="assets/Chetna_Ghorela_Resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-1"><i class="dot"></i></div>
+        <div class="orbit orbit-2"><i class="dot"></i></div>
+        <div class="orbit orbit-3"><i class="dot"></i></div>
+        <div class="initials">CG</div>
+      </div>
+    </section>
+
+    <!-- ============ 2. ABOUT ============ -->
+    <section class="section" id="about">
+      <h2 class="section-title reveal"><span>01</span> About Me</h2>
+      <div class="about-grid">
+        <div class="glass-card reveal">
+          <p>
+            I'm a Computer Science student pursuing an Integrated B.Sc. (Hons.)–M.Sc. in
+            Computer Science, specialising in Artificial Intelligence and Data Science at
+            Guru Jambheshwar University of Science &amp; Technology (GJUST), Hisar.
+          </p>
+          <p>
+            I'm passionate about understanding how technology works and how Artificial
+            Intelligence can solve real-world problems. I believe in learning by building:
+            I enjoy experimenting with new technologies, developing practical projects and
+            continuously improving my technical skills.
+          </p>
+          <p>
+            My goal is to become a skilled technology professional and contribute to
+            innovative, impactful projects.
+          </p>
+        </div>
+        <div class="glass-card reveal">
+          <h3>Interests</h3>
+          <ul class="interest-list">
+            <li>Artificial Intelligence &amp; Machine Learning</li>
+            <li>Data Science &amp; Data Analytics</li>
+            <li>Python Programming</li>
+            <li>Frontend &amp; Web Development</li>
+            <li>Generative AI &amp; AI-powered applications</li>
+          </ul>
+          <p class="muted small lang-line">Languages: English, Hindi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. EDUCATION ============ -->
+    <section class="section" id="education">
+      <h2 class="section-title reveal"><span>02</span> Education</h2>
+      <div class="glass-card reveal edu-card">
+        <h3>Integrated B.Sc. (Hons.)–M.Sc. in Computer Science</h3>
+        <p class="muted">Specialisation: Artificial Intelligence &amp; Data Science</p>
+        <p>Guru Jambheshwar University of Science &amp; Technology (GJUST), Hisar, Haryana, India</p>
+        <div class="badges">
+          <span class="badge">Currently pursuing</span>
+          <span class="badge">Expected graduation: 2029</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. SKILLS ============ -->
+    <section class="section" id="skills">
+      <h2 class="section-title reveal"><span>03</span> Technical Skills</h2>
+      <p class="section-sub reveal">Honest levels: where I'm comfortable, and what I'm still learning.</p>
+
+      <div class="skills-grid">
+
+        <article class="glass-card skill-group reveal">
+          <h3>Programming</h3>
+          <div class="skill" data-level="40"><div class="skill-head"><span>Python</span><em>Basic</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-head"><span>SQL</span><em>Learning</em></div><div class="bar"><div class="fill"></div></div></div>
+        </article>
+
+        <article class="glass-card skill-group reveal">
+          <h3>Web Development</h3>
+          <div class="skill" data-level="60"><div class="skill-head"><span>HTML5</span><em>Working knowledge</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="55"><div class="skill-head"><span>CSS3</span><em>Working knowledge</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-head"><span>JavaScript</span><em>Learning</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-head"><span>React.js</span><em>Learning</em></div><div class="bar"><div class="fill"></div></div></div>
+        </article>
+
+        <article class="glass-card skill-group reveal">
+          <h3>AI &amp; Data</h3>
+          <div class="skill" data-level="45"><div class="skill-head"><span>Artificial Intelligence</span><em>Foundations</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-head"><span>Machine Learning</span><em>Fundamentals</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="45"><div class="skill-head"><span>Data Science</span><em>Fundamentals</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="45"><div class="skill-head"><span>Data Visualisation</span><em>Foundations</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="40"><div class="skill-head"><span>Generative AI</span><em>Concepts</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="35"><div class="skill-head"><span>Image Analysis</span><em>Learning</em></div><div class="bar"><div class="fill"></div></div></div>
+        </article>
+
+        <article class="glass-card skill-group reveal">
+          <h3>Tools</h3>
+          <div class="skill" data-level="50"><div class="skill-head"><span>GitHub</span><em>Working knowledge</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="50"><div class="skill-head"><span>Chart.js</span><em>Working knowledge</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="55"><div class="skill-head"><span>Microsoft Excel</span><em>Working knowledge</em></div><div class="bar"><div class="fill"></div></div></div>
+          <div class="skill" data-level="55"><div class="skill-head"><span>Microsoft Word</span><em>Working knowledge</em></div><div class="bar"><div class="fill"></div></div></div>
+        </article>
+
+        <article class="glass-card skill-group reveal">
+          <h3>Professional</h3>
+          <div class="badges">
+            <span class="badge">Problem Solving</span>
+            <span class="badge">Communication</span>
+            <span class="badge">Teamwork</span>
+            <span class="badge">Time Management</span>
+            <span class="badge">Quick Learning</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ 5. PROJECTS ============ -->
+    <section class="section" id="projects">
+      <h2 class="section-title reveal"><span>04</span> Featured Projects</h2>
+
+      <div class="projects-grid">
+
+        <article class="glass-card project-card reveal">
+          <div class="project-img" aria-hidden="true">
+            <svg viewBox="0 0 240 120" class="art" xmlns="http://www.w3.org/2000/svg">
+              <rect class="art-bar" x="26"  y="70" width="22" height="34" rx="4" />
+              <rect class="art-bar" x="62"  y="52" width="22" height="52" rx="4" />
+              <rect class="art-bar" x="98"  y="60" width="22" height="44" rx="4" />
+              <rect class="art-bar" x="134" y="36" width="22" height="68" rx="4" />
+              <rect class="art-bar" x="170" y="24" width="22" height="80" rx="4" />
+              <polyline class="art-line" points="37,58 73,40 109,48 145,24 181,14" fill="none" />
+              <circle class="art-dot" cx="181" cy="14" r="5" />
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="muted small">Project 01</p>
+            <h3>Finance Dashboard</h3>
+            <p>An interactive financial dashboard designed to present financial information through charts, summaries and visual analytics.</p>
+            <ul class="mini-list">
+              <li>Organises and visualises financial transaction data.</li>
+              <li>Uses charts, tables and category-wise summaries to support spending analysis.</li>
+              <li>Focused on usability, layout and clear presentation of key insights.</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">React.js</span>
+              <span class="badge">Chart.js</span>
+              <span class="badge">Frontend Development</span>
+            </div>
+            <div class="project-links">
+              <a class="btn btn-primary btn-sm" href="https://finance-dashboard-frontend-chi.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a class="btn btn-outline btn-sm" href="https://github.com/vrubal65-rgb" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="glass-card project-card reveal">
+          <div class="project-img" aria-hidden="true">
+            <svg viewBox="0 0 240 120" class="art" xmlns="http://www.w3.org/2000/svg">
+              <circle class="art-ring" cx="120" cy="60" r="44" fill="none" />
+              <circle class="art-ring art-ring-2" cx="120" cy="60" r="28" fill="none" />
+              <line class="art-line" x1="120" y1="8"  x2="120" y2="30" />
+              <line class="art-line" x1="120" y1="90" x2="120" y2="112" />
+              <line class="art-line" x1="68"  y1="60" x2="90"  y2="60" />
+              <line class="art-line" x1="150" y1="60" x2="172" y2="60" />
+              <circle class="art-dot" cx="120" cy="60" r="5" />
+            </svg>
+          </div>
+          <div class="project-body">
+            <p class="muted small">Project 02 · Concept</p>
+            <h3>Skincare Analyzer</h3>
+            <p>An AI-assisted skincare application concept focused on image analysis and personalised skincare insights.</p>
+            <ul class="mini-list">
+              <li>Analyses user-provided skin images to present personalised insights.</li>
+              <li>Planned features: skin-type detection, product suggestions and tailored skincare tips.</li>
+            </ul>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">AI Concepts</span>
+              <span class="badge">Image Analysis</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ 6. EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <h2 class="section-title reveal"><span>05</span> Internship Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="glass-card">
+            <p class="muted small">Completed 12 August 2026 · 6 weeks (45 days)</p>
+            <h3>Data Science and Machine Learning Intern</h3>
+            <p class="org">YBI Foundation</p>
+            <ul class="mini-list">
+              <li>Completed a structured internship focused on Data Science and Machine Learning.</li>
+              <li>Took part in learning activities and project-based tasks to build a practical understanding of data science concepts.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <h2 class="section-title reveal"><span>06</span> Certifications &amp; Training</h2>
+
+      <div class="cert-grid">
+        <!-- A "View credential" link appears only when data-link holds a real https:// URL. -->
+        <article class="glass-card cert reveal" data-link=""><h3>Data Science and Machine Learning Internship</h3><p class="muted">YBI Foundation</p><p class="cert-date">Aug 2026</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>Fundamentals of Python Programming</h3><p class="muted">5-Day Bootcamp · YBI Foundation with Skills4India</p><p class="cert-date">Jul 2026</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>AI and Data Skills with Python Programming</h3><p class="muted">10-Day Bootcamp · YBI Foundation with Skills4India</p><p class="cert-date">Jul 2026</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>AI Medical Image Disease Detection System using Deep Learning</h3><p class="muted">Project Workshop · YBI Foundation</p><p class="cert-date">Jul 2026</p></article>
+        <article class="glass-card cert reveal" data-link="https://courses.cognitiveclass.ai/certificates/11cdb9bbbedd4f2a9ea42f6690bdfba7"><h3>Python 101 for Data Science</h3><p class="muted">Cognitive Class / IBM</p><p class="cert-date">May 2026</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>What Is Generative AI?</h3><p class="muted">LinkedIn Learning</p><p class="cert-date">Jul 2026</p></article>
+        <article class="glass-card cert reveal" data-link="https://coursera.org/verify/74UZUZ3KVABW"><h3>Build a Free Website with WordPress</h3><p class="muted">Coursera Project</p><p class="cert-date">Oct 2026</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>Generative AI in Action</h3><p class="muted">IBM SkillsBuild</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>Data Literacy</h3><p class="muted">IBM SkillsBuild</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>Create an AI Agent with Microsoft Foundry</h3><p class="muted">Microsoft Applied Skills</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>Introduction to AI Concepts</h3><p class="muted">Microsoft Learn</p></article>
+        <article class="glass-card cert reveal" data-link=""><h3>Professional Networking for Career Growth</h3><p class="muted">HP LIFE</p></article>
+      </div>
+    </section>
+
+    <!-- ============ 8. ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <h2 class="section-title reveal"><span>07</span> Achievements</h2>
+      <div class="ach-grid">
+        <div class="glass-card reveal">
+          <h3>🥈 Second Position</h3>
+          <p>Secured second position in a fortnightly group discussion series organised by Udbhavana Club and the Training &amp; Placement Cell.</p>
+        </div>
+        <div class="glass-card reveal">
+          <h3>🎤 University Activities</h3>
+          <p>Took part in university-level cultural activities and developed public-speaking, confidence and teamwork skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. CONTACT ============ -->
+    <section class="section" id="contact">
+      <h2 class="section-title reveal"><span>08</span> Let's Connect</h2>
+      <div class="glass-card reveal contact-card">
+        <p>
+          I'm always interested in learning opportunities, technology discussions,
+          collaborations and projects. Whether it's Artificial Intelligence, Data
+          Science or Web Development, I'd love to connect and exchange ideas.
+        </p>
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:chetnaghorla@gmail.com">chetnaghorla@gmail.com</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chetna-ghorela-9ab259402" target="_blank" rel="noopener noreferrer">linkedin.com/in/chetna-ghorela</a></li>
+          <li><strong>GitHub:</strong> <a href="https://github.com/vrubal65-rgb" target="_blank" rel="noopener noreferrer">github.com/vrubal65-rgb</a></li>
+          <li><strong>Location:</strong> Hisar, Haryana, India</li>
+        </ul>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="mailto:chetnaghorla@gmail.com">Send an Email</a>
+          <a class="btn btn-outline" href="https://www.linkedin.com/in/chetna-ghorela-9ab259402" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 10. FOOTER ============ -->
+  <footer class="footer">
+    <p>Designed &amp; built by Chetna Ghorela · <span id="year"></span></p>
+    <p class="footer-links">
+      <a href="https://github.com/vrubal65-rgb" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/chetna-ghorela-9ab259402" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="mailto:chetnaghorla@gmail.com">Email</a>
+    </p>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
